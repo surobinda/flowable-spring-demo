@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: default
+  datasource:
+    url: jdbc:mysql://localhost:3305/sourcedb?allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    hibernate:
+      format_sql: true
